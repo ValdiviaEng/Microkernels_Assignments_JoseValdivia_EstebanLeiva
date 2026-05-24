@@ -1,1 +1,34 @@
+# Windows / WSL copied metadata
+*:Zone.Identifier*
 *Zone.Identifier*
+
+# Emacs lock/temp files
+.#*
+*~
+
+# Kernel generated build outputs
+mkc/kern/build/*
+!mkc/kern/build/
+!mkc/kern/build/Makefile
+
+# User generated build outputs
+mkc/user/build/*
+!mkc/user/build/
+!mkc/user/build/Makefile
+
+# Extra generated artifacts, kept explicit for clarity
+mkc/kern/build/hypervisor
+mkc/user/build/user.nova
+mkc/user/build/user.nova.debug
+mkc/user/build/user.nova.debug.map
+
+# Local logs
+logs/
+*.log
+*.out
+
+# Editor/project files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
